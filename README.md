@@ -15,10 +15,14 @@ A modern and responsive personal portfolio website built using React.js (Vite) t
 
 
 
-    Tech Stack
+Tech Stack
+
 Frontend: React.js
+
 Styling: CSS3
+
 Routing: React Router DOM
+
 Build Tool: Vite
 
 

@@ -1,0 +1,135 @@
+/* ================= PAGE ================= */
+.about-page {
+  min-height: 100vh;
+  background: var(--bg-main);
+  color: var(--text-dark);
+  padding: 80px 120px;
+  font-family: "Inter", sans-serif;
+}
+
+/* ================= HEADER ================= */
+.about-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.about-title {
+  font-family: "Archivo Black", sans-serif;
+  font-size: clamp(48px, 6vw, 80px);
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+/* ================= HOME BUTTON ================= */
+.home-btn {
+  position: absolute;
+  top: 50px;
+  right: 80px;
+  background: #2F3A2E;
+  color: #f5f8ed;
+  border-radius: 999px;
+  padding: 14px 42px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 52px;
+  transition: all 0.3s ease;
+}
+.home-btn:hover {
+  background: var(--bg-section);
+  color: var(--text-dark);
+  transform: translateY(-2px);
+}
+/* ================= CONTENT ================= */
+.about-content {
+  max-width: 900px;
+}
+
+/* INTRO TEXT */
+.about-intro {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin-bottom: 80px;
+}
+
+/* ================= SECTION BLOCK ================= */
+.about-section {
+  background: var(--bg-section);
+  padding: 60px 60px;
+  border-radius: 28px;
+  margin-bottom: 80px;
+}
+
+.about-section h2 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+/* LIST */
+.about-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-section li {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-dark);
+  margin-bottom: 14px;
+  position: relative;
+  padding-left: 22px;
+}
+
+.about-section li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+}
+
+/* ================= SKILL PILLS ================= */
+.skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.skill-pills span {
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: var(--text-dark);
+  color: var(--bg-main);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .about-page {
+    padding: 60px 30px;
+  }
+
+  .about-header {
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .about-intro {
+    font-size: 16px;
+  }
+
+  .about-section {
+    padding: 40px 30px;
+  }
+}

@@ -1,0 +1,126 @@
+/* ================= PAGE ================= */
+.skills-page {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg-main); 
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* ================= HOME BUTTON (TOP RIGHT) ================= */
+.skills-page .home-btn {
+  position: absolute;
+  top: 50px;
+  right: 80px;
+  background: #2F3A2E;
+  color: #f5f8ed;
+  border-radius: 999px;
+  padding: 14px 42px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 52px;
+  transition: all 0.3s ease;
+}
+
+.skills-page .home-btn:hover {
+  background: var(--bg-section);
+  color: var(--text-dark);
+  transform: translateY(-2px);
+}
+
+/* ================= LAYOUT ================= */
+.skills-container {
+  width: 100%;
+  padding: 0 120px;
+  display: flex;
+  align-items: center;
+}
+
+/* ================= LEFT ================= */
+.skills-left {
+  width: 40%;
+}
+
+.skills-left h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: clamp(64px, 8vw, 96px);
+  letter-spacing: 2px;
+  color: var(--text-dark);
+}
+
+/* ================= RIGHT ================= */
+.skills-right {
+  width: 60%;
+}
+
+.skills-heading {
+  color:  #2F3A2E;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 1000px;
+  letter-spacing: 3px;
+  margin-bottom: 60px;
+}
+
+
+/* ================= SKILL BLOCK ================= */
+.skill-block {
+  margin-bottom: 40px;
+}
+
+.skill-name {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: var(--text-dark);
+}
+
+/* ================= BAR ================= */
+.bar {
+  width: 320px;
+  height: 14px;
+  background: #d1d1d1;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background: var(--text-dark);
+  border-radius: 999px;
+}
+
+/* ================= WIDTHS ================= */
+.w-70 { width: 70%; }
+.w-55 { width: 55%; }
+.w-35 { width: 35%; }
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .skills-container {
+    flex-direction: column;
+    padding: 100px 30px 40px;
+  }
+
+  .skills-left,
+  .skills-right {
+    width: 100%;
+  }
+
+  .skills-left h1 {
+    font-size: 56px;
+    margin-bottom: 40px;
+  }
+
+  .skills-page .home-btn {
+    right: 30px;
+    top: 30px;
+  }
+}

@@ -1,0 +1,232 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* ================= COLOR VARIABLES ================= */
+:root {
+  --bg-main: #FBF8DC;       
+  --bg-section: #AEBB91;    
+  --text-dark: #2F3A2E;     
+  --accent: #2F3A2E;
+}
+
+
+
+/* ================= BODY ================= */
+body {
+  background: var(--bg-main);
+  color: var(--text-dark);
+  font-family: "Inter", sans-serif;
+}
+
+/* ================= HERO ================= */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: var(--beige);
+}
+
+.hero-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+/* ================= LEFT IMAGE ================= */
+.hero-photo {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.profile-img {
+  height: 75%;
+  display: block;
+  padding: 0;              
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+  position: relative;
+  background: var(--text-dark);
+  border-radius: 28px;
+}
+
+.profile-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 3px solid var(--accent);
+  border-radius: 24px;
+  opacity: 0.15;
+}
+
+/* ================= RIGHT CONTENT ================= */
+.hero-content {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  right: 10%;
+  align-items: center;
+  padding-left: 80px;
+}
+
+/* ================= TOP BUTTONS ================= */
+.top-actions {
+  position: absolute;
+  top: 50px;
+  display: flex;
+  gap: 150px;
+}
+
+/* ================= BUTTONS ================= */
+.btn {
+  letter-spacing: 0.5px;
+  border: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;         
+  height: 52px; 
+  background: var(--text-dark);
+  color: var(--bg-main);
+  padding: 14px 42px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+.btn,
+.btn:visited,
+.btn:hover,
+.btn:active {
+  text-decoration: none;
+}
+
+.btn.small {
+  min-width: 200px;
+}
+
+/* ================= NAME & ROLE ================= */
+.hero-title {
+  font-weight: 800;
+  letter-spacing: 4px;
+  font-family: "Archivo Black", sans-serif;
+  font-size: clamp(64px, 8vw, 110px);
+  line-height: 0.95;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+
+.hero-sub {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 16px;
+  font-weight: 800;
+}
+
+/* ================= CTA ================= */
+.main-cta {
+  padding: 12px 36px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* ================= HOME BOTTOM ================= */
+.home-bottom {
+  width: 100%;
+  padding: 80px 0 60px;
+  background: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ================= BOTTOM LINKS ================= */
+.bottom-links {
+  display: flex;
+  gap: 120px;
+  margin-bottom: 50px;
+}
+
+/* ================= CONNECT TEXT ================= */
+.connect-text {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: var(--beige);
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* ================= SOCIAL ICONS ================= */
+.social-icons {
+  display: flex;
+  gap: 28px;
+}
+
+.social-icons a {
+  color: var(--beige);
+  font-size: 22px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .hero-inner {
+    flex-direction: column;
+  }
+
+  .hero-photo,
+  .hero-content {
+    width: 100%;
+    right: 0;
+  }
+
+  .profile-img {
+    height: 60%;
+  }
+
+  .top-actions {
+    gap: 40px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+}
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.highlight {
+  background: var(--accent);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: 700;
+}

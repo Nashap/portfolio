@@ -1,16 +1,55 @@
-# React + Vite
+🌐 Nasha P - Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive personal portfolio website built using React.js (Vite) to showcase my skills, projects, and professional journey.
 
-Currently, two official plugins are available:
+ Features
+ - Clean and minimal Home page
+ - About page with profile details
+ - Resume download functionality
+ - Reach Out section with navigation
+ - Skills page showcasing technologies
+ - Projects section (upcoming)
+ - Social media integration
+ - Fully responsive design
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    Tech Stack
+Frontend: React.js
+Styling: CSS3
+Routing: React Router DOM
+Build Tool: Vite
 
-## React Compiler
+Project Structure
+NASHA/
+│
+├── public/
+│   ├── profile.png       
+│   ├── resume.pdf        
+│
+│
+├── src/
+│   ├── assets/           
+│   ├── pages/            
+│   │   ├── Home.jsx
+│   │   ├── About.jsx
+│   │   ├── ReachOut.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Projects.jsx
+│   │   └── Links.jsx
+│   │
+│   ├── services/         
+│   │   └── api.js
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── styles.css
+│   ├── index.css
+│   └── App.css
+│
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+[screenshots.pdf](https://github.com/user-attachments/files/26276875/screenshots.pdf)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
